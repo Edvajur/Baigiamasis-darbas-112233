@@ -18,6 +18,21 @@
         {{ genre.name }}{% if not forloop.last %}, {% endif %}
         {% endfor %}
     </p>
+    {% if user.is_authenticated %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit comment</button>
+    </form>
+{% else %}
+    <p>You must be logged in to comment.</p>
+{% endif %}
+    <h2>Comments</h2>
+{% for comment in game.comment_set.all %}
+    <p>{{ comment.user.username }} said: "{{ comment.text }}"</p>
+{% empty %}
+    <p>No comments yet.</p>
+{% endfor %}
     <!-- You can add more details here as needed -->
 </div>
 {% endblock %}

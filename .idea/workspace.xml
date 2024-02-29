@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8682e0a1-47f5-45c4-8f3a-369455348515" name="Changes" comment="Gamer">
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/library/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/library/migrations/0011_comment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/library/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/library/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/library/templates/library/search_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/templates/library/search_results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/library/templates/library/game_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/templates/library/game_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/library/templates/library/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/templates/library/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/library/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/library/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
@@ -22,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -96,7 +99,14 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1709171629009</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="Gamer">
+      <option name="closed" value="true" />
+      <created>1709177230691</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1709177230691</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

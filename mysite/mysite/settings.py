@@ -62,7 +62,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                # 'django.contrib.auth.context_processors.auth',
+                'django.contrib.auth.context_processors.auth',
             ],
         },
     },
@@ -124,5 +124,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_IMAGE_URL = '/media/default.jpg'
-# LOGIN_REDIRECT_URL = 'home'  # Redirect to home page after login
-# LOGOUT_REDIRECT_URL = 'login'  # Redirect to login page after logout
+LOGIN_REDIRECT_URL = '/library/'  # Redirect to home page after login
+LOGOUT_REDIRECT_URL = '/library/'  # Redirect to login page after logout
