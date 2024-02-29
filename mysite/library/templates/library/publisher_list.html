@@ -1,0 +1,18 @@
+<!-- templates/library/publisher_list.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Publisher List</h2>
+    <ul>
+        {% for publisher in publishers %}
+        <li>
+            <h3>{{ publisher.name }}</h3>
+            <!-- You can add more details about each publisher here -->
+        </li>
+        {% empty %}
+        <li>No publishers available.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

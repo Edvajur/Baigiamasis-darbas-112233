@@ -1,0 +1,18 @@
+<!-- templates/library/developer_list.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Developer List</h2>
+    <ul>
+        {% for developer in developers %}
+        <li>
+            <h3>{{ developer.name }}</h3>
+            <!-- You can add more details about each developer here -->
+        </li>
+        {% empty %}
+        <li>No developers available.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

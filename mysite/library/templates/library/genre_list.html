@@ -1,0 +1,20 @@
+<!-- templates/library/genre_list.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Genre List</h2>
+    <ul>
+    {% for genre in genres %}
+    <li>
+       <h3>{{ genre.name }}</h3>
+        <p>Games in this genre:</p>
+        <ul>
+        {% for game in genre.game_set.all %}
+        <li>{{ game.title }}</li>
+         {% empty %}
+        <li>No games for this genre.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

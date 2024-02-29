@@ -1,0 +1,131 @@
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pagination .step-links {
+    display: inline-block;
+}
+
+.pagination .step-links a {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    color: #33b73c;
+    text-decoration: none;
+}
+
+.pagination .step-links a:hover {
+    border-color: #33b73c;
+}
+
+.pagination .current {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #33b73c;
+    color: #fff;
+    background-color: #33b73c;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #aeb35b;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #453ff2 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header ul {
+        float: none;
+        margin-top: 0;
+    }
+
+    header nav, header ul, header li, header #branding, header h1 {
+        text-align: center;
+        float: none;
+    }
+
+    header ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+.pagination {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pagination a {
+    color: #fff;
+    padding: 0 5px;
+}
+
+.pagination a:hover {
+    background: #201de8;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Other styles here */

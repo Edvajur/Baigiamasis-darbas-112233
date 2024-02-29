@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Title{% endblock %}</title>
+    <!-- Include your CSS files here -->
+    <link href="{% static 'library/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        {% include 'library/search_form.html' %}
+        <!-- Navigation bar goes here -->
+    </header>
+
+    {% block content %}
+    <!-- Content overridden by child templates will go here -->
+    {% endblock %}
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+    <!-- Include your JavaScript files here -->
+</body>
+</html>

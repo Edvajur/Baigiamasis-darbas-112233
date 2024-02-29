@@ -17,7 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from .views import search_view
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('games/', views.game_list, name='game_list'),
+    path('developers/', views.developer_list, name='developer_list'),
+    path('publishers/', views.publisher_list, name='publisher_list'),
+    path('games/<int:pk>/', views.game_detail, name='game_detail'),
+    path('genres/', views.genre_list, name='genre_list'),
+    path('search/', search_view, name='search'),
+    # path('search/', views.search_results, name='search_results'),
 ]

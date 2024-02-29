@@ -1,8 +1,6 @@
 from django.db import models
 from django.urls import reverse
 
-# Create your models here.
-
 class Genre(models.Model):
     name = models.CharField(verbose_name="Name", max_length=200, help_text="Write game genre")
 
@@ -25,8 +23,12 @@ class Game(models.Model):
     title = models.CharField(verbose_name="Name", max_length=200)
     developer = models.ForeignKey('Developer', on_delete=models.SET_NULL, null=True, blank=True, related_name='games_developed')
     publisher = models.ForeignKey('Publisher', on_delete=models.SET_NULL, null=True, blank=True, related_name='games_published')
-    summary = models.TextField(verbose_name="Summary", max_length=2000, help_text="Game summary", default="No summary available.")
+    summary = models.TextField(verbose_name="Summary", max_length=5000, help_text="Game summary", default="No summary available.")
     genre = models.ManyToManyField('Genre', verbose_name="Genre", help_text="Delete genre for this game")
+    image = models.ImageField(upload_to='media/', default='default.jpg')
+
+    class Meta:
+        ordering = ['title']
 
     def __str__(self):
         return self.title

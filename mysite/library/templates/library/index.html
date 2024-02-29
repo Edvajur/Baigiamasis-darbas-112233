@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container">
+    <h1>Games</h1>
+{% for game in page_obj %}
+<div>
+    {% if game.image %}
+        <img src="{{ game.image.url }}" alt="{{ game.title }}" style="width: 200px; height: 100;" />
+    {% else %}
+        <img src="{{ MEDIA_URL }}game_images/default.png" alt="Default image" style="width: 300px; height: 100;" />
+    {% endif %}
+    <h2><a href="{% url 'game_detail' game.pk %}">{{ game.title }}</a></h2>
+    <p>{{ game.summary|truncatewords:30 }}</p>
+    <a href="{% url 'game_detail' game.pk %}">Read more...</a>
+</div>
+{% endfor %}
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">First</a>
+                <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">Next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+            {% endif %}
+        </span>
+    </div>
+</div>
+{% endblock %}

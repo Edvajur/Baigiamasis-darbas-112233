@@ -1,0 +1,22 @@
+<!-- templates/library/game_list.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Featured Games</h1>
+{% for game in games %}
+<div>
+    {% if game.image %}
+        <img src="{{ MEDIA_URL }}" alt="{{ game.title }}" style="width: 100px; height: 100;">
+    {% else %}
+        <img src="{{ MEDIA_URL }}default.png" alt="Default image" style="float: left; margin-right: 100px;" />
+    {% endif %}
+    <h2><a href="{% url 'game_detail' game.pk %}">{{ game.title }}</a></h2>
+    </div>
+    {% empty %}
+    <p>No games available.</p>
+    {% endfor %}
+
+</div>
+{% endblock %}
