@@ -1,10 +1,12 @@
-{% if query %}
-    <h2>Search Results for "{{ query }}"</h2>
-{% endif %}
 
-{% for game in games %}
-    <h3><a href="{% url 'game_detail' game.pk %}">{{ game.title }}</a></h3>
-    <!-- Display other game details -->
-{% empty %}
-    <p>No games found.</p>
-{% endfor %}
+<h1>Search Results for "{{ query }}"</h1>
+
+{% if results %}
+    <ul>
+    {% for game in results %}
+        <li><a href="{% url 'game_detail' game.pk %}">{{ game.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No results found.</p>
+{% endif %}

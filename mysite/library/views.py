@@ -1,8 +1,12 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
+from django.views import View
+
 from .models import Game, Developer, Publisher, Genre
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
 
@@ -48,8 +52,18 @@ def search_view(request):
         games = Game.objects.all()
     return render(request, 'library/search_results.html', {'query': query, 'games': games})
 
-
+# class MyView(LoginRequiredMixin, View):
+#     login_url = '/login/'
+#     redirect_field_name = 'redirect_to'
 #
+#     def get(self, request):
+#         # Your logic here
+#         default_image_url = settings.MEDIA_URL + 'default.jpg'
+#         return render(request, 'my_template.html', {'DEFAULT_IMAGE_URL': default_image_url})
+
+
+
+
 # def search_results(request):
 #     query = request.GET.get('q', '')  # Get the query parameter 'q' from the URL
 #

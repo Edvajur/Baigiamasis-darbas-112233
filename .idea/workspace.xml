@@ -4,48 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8682e0a1-47f5-45c4-8f3a-369455348515" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/library/migrations/0004_alter_game_summary.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/migrations/0005_game_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/migrations/0006_alter_game_options.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/migrations/0007_alter_game_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/migrations/0008_alter_game_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/migrations/0009_alter_game_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/migrations/0010_alter_game_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/static/library/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/developer_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/game_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/game_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/genre_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/publisher_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/search_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/search_results.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/220px-Street_Fighter_6_box_art1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/Baldurs_Gate_3_cover_art1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/Baldurs_Gate_3_cover_art1_1a1z5A3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/CrossCode_cover_art_Feb_20171.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/CrossCode_cover_art_Feb_20171_beSGOHd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/CrossCode_cover_art_Feb_20171_jeZDXfw.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/CrossCode_cover_art_Feb_20171_mk1wHeF.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/Helldivers2cover1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/Palworld_Steam_artwork1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/Street_Fighter_6_box_art1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/XCOM_2_cover_art1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/XCOM_Enemy_Unknown_Game_Cover1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/default_p7gDZ9g.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/media/header1.jpg" afterDir="false" />
+    <list default="true" id="8682e0a1-47f5-45c4-8f3a-369455348515" name="Changes" comment="Gamer">
+      <change afterPath="$PROJECT_DIR$/mysite/library/templates/library/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/library/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/library/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/library/templates/registration/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/library/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/library/templates/library/search_results.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/templates/library/search_results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/library/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/library/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/library/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +89,14 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1709082850575</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Gamer">
+      <option name="closed" value="true" />
+      <created>1709171629009</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1709171629009</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
